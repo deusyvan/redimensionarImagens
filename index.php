@@ -9,4 +9,8 @@
     
     $ratio = $largura_original / $altura_original;
     
-    echo $ratio;
+    if($largura/$altura > $ratio){
+        $largura = $altura * $ratio;
+    } else {
+        $altura = $largura / $ratio;
+    }
