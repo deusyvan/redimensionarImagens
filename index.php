@@ -12,5 +12,6 @@
     imagecopy($imagem_final, $imagem_original, 0, 0, 0, 0, 
         $largura_original, $altura_original);
     
-    
+    header("Content-Type: image/jpeg");
+    imagejpeg($imagem_final, NULL);
 ?>
