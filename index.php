@@ -15,5 +15,6 @@
         $altura = $largura / $ratio;
     }
     
-    echo "L ORIGINAL: ".$largura_original." - A ORIGINAL: ".$altura_original."<br/>";
-    echo "LARGURA: ".$largura." - ALTURA: ".$altura;
+    $image = imagecreatetruecolor($largura, $altura);
+    
+?>
