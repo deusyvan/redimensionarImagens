@@ -9,5 +9,8 @@
     $imagem_original = imagecreatefromjpeg("wallpaper-1210239.jpg");
     $imagem_mini = imagecreatefromjpeg("mini_imagem.jpeg");
     
+    imagecopy($imagem_final, $imagem_original, 0, 0, 0, 0, 
+        $largura_original, $altura_original);
+    
     
 ?>
