@@ -21,7 +21,8 @@
     imagecopyresampled($imagem_final, $imagem_original, 
         0, 0, 0, 0 , $largura, $altura, $largura_original, $altura_original);
     
-    header("Content-Type: image/jpeg");
-    imagejpeg($imagem_final, NULL, 100);
+    imagejpeg($imagem_final, "mini_imagem.jpeg", 100);
+    
+    echo "Imagem redimencionada com sucesso!"
     
 ?>
