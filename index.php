@@ -15,6 +15,8 @@
         $altura = $largura / $ratio;
     }
     
-    $image = imagecreatetruecolor($largura, $altura);
+    $imagem_final = imagecreatetruecolor($largura, $altura);
+    
+    $imagem_original = imagecreatefromjpeg($arquivo);
     
 ?>
