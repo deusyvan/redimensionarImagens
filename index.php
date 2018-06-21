@@ -21,4 +21,6 @@
     imagecopyresampled($imagem_final, $imagem_original, 
         0, 0, 0, 0 , $largura, $altura, $largura_original, $altura_original);
     
+    imagejpeg($imagem_final, NULL, 100);
+    
 ?>
