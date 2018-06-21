@@ -13,7 +13,7 @@
     imagecopy($imagem_final, $imagem_original, 0, 0, 0, 0, 
         $largura_original, $altura_original);
     
-    imagecopy($imagem_final, $imagem_mini, 0, 0, 0, 0, $largura_mini, $altura_mini);
+    imagecopy($imagem_final, $imagem_mini, 100, 200, 0, 0, $largura_mini, $altura_mini);
     
     header("Content-Type: image/jpeg");
     imagejpeg($imagem_final, NULL);
