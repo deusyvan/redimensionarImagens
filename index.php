@@ -15,6 +15,7 @@
     
     imagecopy($imagem_final, $imagem_mini, 100, 200, 0, 0, $largura_mini, $altura_mini);
     
-    header("Content-Type: image/jpeg");
-    imagejpeg($imagem_final, NULL);
+    imagejpeg($imagem_final, "imagem_marca_dagua.jpg");
+    
+    echo "Imagem criada com sucesso";
 ?>
